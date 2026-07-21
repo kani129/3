@@ -1,171 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <!-- スマートフォンやタブレットなどのモバイル端末での表示を最適化するための設定 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 文字化け防止 -->
-  <meta name="description" content="千葉県船橋市にあるかじろ鍼灸院">
-  <!-- グーグルフォントNoto Serif Japanese   とNoto Sans JapaneseとRobotoの全3種類、   font-weight400;700のみ取り込み（軽量化） -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=contact_page,pet_supplies,pets" />
-  <!-- Swiper 公式CSS　コピペして使う -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <!-- Swiper 公式JS　コピペして使う -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <!-- リセットＣＳＳ -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <!-- ＣＳＳスタイルシート読み込み -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- ファビコン設置 -->
-  <link rel="icon" href="./images/favicon.ico" type=“image/png”>
-  <!-- スクロールふわっとjQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマートフォンやタブレットなどのモバイル端末での表示を最適化するための設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 文字化け防止 -->
+        <meta name="description" content="千葉県船橋市にあるかじろ鍼灸院" />
+        <!-- グーグルフォントNoto Serif Japanese   とNoto Sans JapaneseとRobotoの全3種類、   font-weight400;700のみ取り込み（軽量化） -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=contact_page,pet_supplies,pets"
+        />
+        <!-- Swiper 公式CSS　コピペして使う -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <!-- Swiper 公式JS　コピペして使う -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!-- リセットＣＳＳ -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- ＣＳＳスタイルシート読み込み -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- ファビコン設置 -->
+        <link rel="icon" href="./images/favicon.png" type="image/png" />
+        <!-- スクロールふわっとjQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- タブに表示される -->
-  <title>かじろ鍼灸院｜心と身体にやさしい鍼灸</title>
-</head>
+        <!-- タブに表示される -->
+        <title>かじろ鍼灸院｜心と身体にやさしい鍼灸を。</title>
+    </head>
 
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="logo">
-        <h1 a href="#top">
-            <img class="logo__img" src="./images/h1.png" alt="かじろ鍼灸院" />
-        </h1>
-      </div>
-      <!-- ハンバーガーメニュー ここから -->
-      <div class="menu">
-        <!-- ハンバーガーボタン -->
-        <!-- 読み上げ機能のため、aria-labelを設定 -->
-        <input type="checkbox" id="menu-toggle" aria-label="メニューを開く/閉じる" hidden />
-        <label class="menu__icon" for="menu-toggle">
-          <span class="menu__line"></span>
-          <span class="menu__line"></span>
-          <span class="menu__line"></span>
-        </label>
-        <!-- グローバルナビゲーション -->
-        <nav class="header-nav" role="navigation" aria-label="メインメニュー">
-          <ul class="header-nav__list" role="list">
-            <li class="header-nav__item">
-              <a href="#Home" class="header-nav__item__link">ホーム</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#Menu" class="header-nav__item__link">施術メニュー</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#Price" class="header-nav__item__link">ご利用料金</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="Access" class="header-nav__item__link">アクセス</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!-- ハンバーガーメニューここまで -->
-    </header>
-    <main>
-      <section class="main__image">
-      <div class="container">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"> <img class="main__image" src="./images/mv1.webp" alt="施術風景1">
-            </div>
-            <div class="swiper-slide"> <img class="main__image" src="./images/mv2.webp" alt="施術風景2">
-            </div>
-            <div class="swiper-slide"> <img class="main__image" src="./images/mv3.webp" alt="施術風景3">
-              </div>
-          </div>
+    <body>
+        <div class="wrapper" id="top">
+            <header class="header">
+                <div class="logo">
+                    <h1>
+                        <a href="#top"
+                            ><img class="logo__img" src="./images/h1.png" alt="かじろ鍼灸院" />
+                        </a>
+                    </h1>
+                </div>
+                <!-- ハンバーガーメニュー ここから -->
+                <div class="menu">
+                    <!-- ハンバーガーボタン -->
+                    <!-- 読み上げ機能のため、aria-labelを設定 -->
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        aria-label="メニューを開く/閉じる"
+                        hidden
+                    />
+                    <label class="menu__icon" for="menu-toggle">
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                    </label>
+                    <!-- グローバルナビゲーション -->
+                    <nav class="header-nav" role="navigation" aria-label="メインメニュー">
+                        <ul class="header-nav__list" role="list">
+                            <li class="header-nav__item">
+                                <a href="#top" class="header-nav__item__link">ホーム</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#Menu" class="header-nav__item__link">施術メニュー</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#Price" class="header-nav__item__link">ご利用料金</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#Access" class="header-nav__item__link">アクセス</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- ハンバーガーメニューここまで -->
+            </header>
+            <main>
+                <section class="main__image">
+                    <div><img src="./images/top.webp" alt="店内の写真イメージ" /></div>
+
+                    <h2>心と身体に、やさしい鍼灸を。</h2>
+                    <p>
+                        一人ひとりのお悩みにやさしく寄り添い、すこやかで健康な毎日をサポートいたします。
+                    </p>
+                    <a href="#" class="reserve-btn"> WEB予約する → </a>
+                </section>
+                <section class="Features" id="Features">
+                    <h2 class="Features__title">
+                        OUR&nbsp;VALUES<br />当院の4つの特徴<br />&#x1F33F;
+                    </h2>
+                    <div>
+                        <img src="./images/" />
+                        <h3>痛みの少ない施術</h3>
+                        <p>
+                            極めて細い鍼を使用し、お客様にご負担のかからないように丁寧に施術いたします。
+                        </p>
+                    </div>
+                    <div>
+                        <h3>女性も安心</h3>
+                        <p>女性鍼灸師が個別に個室にてカウンセリング・施術させていただきます。</p>
+                    </div>
+                    <div>
+                        <h3>完全予約制</h3>
+                        <p>待合室での密を避け、一人ひとり十分な時間を確保して施術いたします。</p>
+                    </div>
+                    <div>
+                        <h3>心地よい空間</h3>
+                        <p>木の温もりと柔らかな照明で、リラックスしてお休みいただけます。</p>
+                    </div>
+                </section>
+                <section class="Menu" id="Menu">
+                    <h2 class="Menu__title">
+                        TREATMENT&nbsp;MENU<br />施術メニュー<br />&#x1F33F;
+                    </h2>
+                    <div class="container">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img
+                                        class="menu__img"
+                                        src="./images/menu1.webp"
+                                        alt="美容鍼施術の様子"
+                                    />
+                                    <h3>美容鍼（お顔のケア）&#x00A5;8,500</h3>
+                                    <p>
+                                        お肌の血行を促し、お肌の奥のコラーゲンを活性化させます。シワやくすみ、たるみにアプローチし、本来のハリと透明感を引き出します。
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img
+                                        class="menu__img"
+                                        src="./images/menu2.webp"
+                                        alt="お灸の様子"
+                                    />
+                                    <h3>お灸・箱灸ケア&#x00A5;6,000</h3>
+                                    <p>
+                                        じんわりとした心地よい温熱を伝える伝統的な箱灸。身体の芯から温めることで冷えを緩和し、全体の免疫力や自律神経のバランスを心地よく調律します。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- ページネーションとスクロールバーを追加 -->
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="question" id="question">
+                    <h2 class="question__title">
+                        Ｑ&nbsp;&amp;&nbsp;Ａ<br />よくあるご質問<br />&#x1F33F;
+                    </h2>
+                    <details>
+                        <summary>Ｑ.鍼（はり）は痛くないですか？</summary>
+                        Ａ．当院で使用する鍼は、髪の毛ほどの極めて細い使い捨て（ディスポーザブル）の鍼です。刺激の感じ方には個人差がありますが、チクッとする痛みはほとんどなく、心地よさに眠ってしまう方も多くいらっしゃいます
+                    </details>
+                    <details>
+                        <summary>Ｑ.服装や持ち物は必要ですか？</summary>
+                        Ａ．お着替え用のガウン、または施術を受けやすい専用の衣服をご用意しております。特に持ち物などはございませんので、普段着でお気軽にお越しいただけます。
+                    </details>
+
+                    <details>
+                        <summary>Ｑ.当日の予約は可能ですか？</summary>
+                        Ａ．はい、空きがある場合は当日のご案内も可能ですが、完全予約制となっておりますので、ご来院いただく前に必ずお電話・ＬＩＮＥ・ＷＥＢ予約サイトより空き状況のご確認とご予約をお願いいたします。
+                    </details>
+                </section>
+                <section class="access" id="access">
+                    <h2 class="access__title">
+                        ACCESS&nbsp;&amp;&nbsp;HOURS<br />アクセス・診療時間<br />&#x1F33F;
+                    </h2>
+                    <div class="open_time_table">
+                        <div class="open_time">
+                            <div class="time">診療時間</div>
+                            <div class="box day">月</div>
+                            <div class="box day">火</div>
+                            <div class="box day">水</div>
+                            <div class="box day">木</div>
+                            <div class="box day">金</div>
+                            <div class="box day">土</div>
+                            <div class="box day">日・祝</div>
+                        </div>
+                        <div class="open_time">
+                            <div class="time">9:00~12:00</div>
+                            <div class="box">〇</div>
+                            <div class="box">〇</div>
+                            <div class="box">-</div>
+                            <div class="box">〇</div>
+                            <div class="box">〇</div>
+                            <div class="box">〇</div>
+                            <div class="box">-</div>
+                        </div>
+                        <div class="open_time open_time_last">
+                            <div class="time">15:00~19:00</div>
+                            <div class="box">〇</div>
+                            <div class="box">〇</div>
+                            <div class="box">-</div>
+                            <div class="box">〇</div>
+                            <div class="box">〇</div>
+                            <div class="box">〇</div>
+                            <div class="box">-</div>
+                        </div>
+                    </div>
+                    <p>
+                        ※土曜午後の診療は休診となります。<br />※水曜・日曜・祝日は終日休診日です。
+                    </p>
+
+                    <p class="Recommend__text">
+                        【住所】&#12306;273-0000<br />
+                        千葉県船橋市湊町99-99<br />
+                        【アクセス】ＪＲ「船橋駅」南口徒歩20分<br />
+                        【駐車場】店舗目の前に専用駐車場1台完備
+                    </p>
+                    <div class="googlemap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.8445289780034!2d141.389998276186!3d43.00260817114059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2b8c71cfd993%3A0x42b8d37a3236ef55!2ssofacoffee%20wool!5e0!3m2!1sja!2sjp!4v1783060771562!5m2!1sja!2sjp"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                        >
+                        </iframe>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <h2>かじろ鍼灸院<br />Kajiro&nbsp;Acupuncture&nbsp;&&nbsp;Moxibustion</h2>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list" role="list">
+                        <li class="footer-nav__item">
+                            <a href="#top" class="footer-nav__item__link">ホーム</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#Menu" class="footer-nav__item__link"
+                                >メニュー&bull;ご利用料金</a
+                            >
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#Access" class="footer-nav__item__link"
+                                >院内紹介&bull;スタッフ紹介</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <small class="footer__copyright">&copy; 2026かじろ鍼灸院All right reserved</small>
+            </footer>
+            <div id="page_top"><a href="#"></a></div>
         </div>
-      </section>
-      <section class="worry" id="worry">
-        <h2 class="worry__title">&#x1F33F;こんなお悩みに</h2>
-      </section>
-      <section class="character" id="character">
-        <h2 class="character__title">&#x1F33F;当院の特徴</h2>
-        <div>&#x1F469;<p>女性施術者だから安心</p></div>
-        <div>&#x1F62E;<p>痛みが少ない</p></div>
-        <div>&#x1F5D3;<p>完全予約制</p></div>
-      </section>
-      <section class="staff" id="staff">
-        <h2 class="staff__title">&#x1F33F;お客様の声</h2>
-        <div>
-
-        </div>
-      </section>
-<section class="question" id="question">
-        <h2 class="question__title">&#x1F33F;Ｑ&amp;Ａ</h2>
-
-</section>
-<section class="access" id="access">
-        <h2 class="access__title">&#x1F33F;アクセス・診療時間</h2>
-      <div class="googlemap">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.8445289780034!2d141.389998276186!3d43.00260817114059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2b8c71cfd993%3A0x42b8d37a3236ef55!2ssofacoffee%20wool!5e0!3m2!1sja!2sjp!4v1783060771562!5m2!1sja!2sjp"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-      </div>
-      <p class="Recommend__text">
-        &#12306;0620043<br>
-        北海道札幌市豊平区福住3条10丁目3-3<br>
-        羊ヶ丘店望園ビル別棟1階<br>
-        お店のインスタグラムは<a class="Recommend__text__link" href="https://www.instagram.com/sofacoffeewool" target="_blank"
-          rel="noopener noreferrer">こちら</a>からどうぞ
-      </p>
-      <div>
-        <tr>
-          <th></th>
-                  <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-
-        </tr>
-      </div>
-
-
-</section>
-
-
-        <a class="Contact__link" href="mailto:00000@gmail.com">&#9993;&nbsp;メールを送る&nbsp;&#9993;</a>
-        <a class="Contact__link" href="tel:00000000000">&#9742;&nbsp;電話をかける&nbsp;&#9742;</a>
-
-
-      </main>
-    <footer class="footer">
-      <nav class="footer-nav">
-        <ul class="footer-nav__list" role="list">
-          <li class="footer-nav__item">
-              <a href="#Home" class="footer-nav__item__link">ホーム</a>
-          </li>
-          <li class="footer-nav__item">
-              <a href="#Menu" class="footer-nav__item__link">メニュー&bull;ご利用料金</a>
-          </li>
-          <li class="footer-nav__item">
-              <a href="Access" class="footer-nav__item__link">院内紹介&bull;スタッフ紹介</a>
-          </li>
-        </ul>
-      </nav>
-      <small class="footer__copyright">copyright &copy; 2026 Kajiro A&amp;M All right reserved</small>
-    </footer>
-    <div id="page_top"><a href="#"></a></div>
-
-  </div>
-  <!-- java scriptは閉じbodyの直上に記入すること -->
-  <script src="js/tooltip.js"></script>
-  <!-- ジャバスクリプトのオプションについて外部JSファイルに記述 -->
-  <script src="js/swiper.js"></script>
-  <script src="./js/scrole.js"></script>
-</body>
-
+        <!-- java scriptは閉じbodyの直上に記入すること -->
+        <script src="js/tooltip.js"></script>
+        <!-- ジャバスクリプトのオプションについて外部JSファイルに記述 -->
+        <script src="./js/swiper.js"></script>
+        <script src="./js/scrole.js"></script>
+    </body>
 </html>

@@ -644,6 +644,67 @@ h3 {
     /* 半透明の黒 */
 }
 
+.open_time_table {
+  display: block;
+  border-collapse: collapse;
+  /* overflow-x: scroll;で、
+  スマホ画面幅に表が入りきらない場合は
+  横スクロールしてくれます */
+  margin-bottom:25px;
+}
+ .open_time {
+  font-family: "Noto Serif JP",serif;
+  display:flex;
+  text-align:center;
+  
+  border-left: 1px solid #acacac;
+  .time {
+    height:38px;
+    background-color: #f6f6f6;
+    max-width: 26%;
+    width:100%;
+    line-height:36px;
+    font-size:16px;
+    @include mq(max-xxs) {
+      max-width:28%;
+    }
+    @include mq(max-xxxs) {
+      font-size:12px;
+      max-width: 31%;
+    }
+  }
+  .day {
+    font-size:16px;
+    @include mq(max-xxxs) {
+      font-size:12px;
+    }
+  }
+  .box {
+    width:100%;
+    max-width:9.2%;
+    line-height:36px;
+    background:#ffffff;
+    @include mq(max-xxs) {
+      max-width:9%;
+    }
+    @include mq(max-xxxs) {
+      font-size:10px;
+          max-width: 8%;
+    }
+  }
+  div {
+    border-right: 1px solid #acacac;
+    border-top: 1px solid #acacac;
+  }
+  &.open_time_last {
+    div {
+      border-bottom: 1px solid #acacac;
+    }
+  }
+ }
+
+
+
 .googlemap {
     width: 100%;
     position: relative;
