@@ -29,7 +29,7 @@
         <!-- ＣＳＳスタイルシート読み込み -->
         <link rel="stylesheet" href="./css/style.css" />
         <!-- ファビコン設置 -->
-        <link rel="icon" href="./images/favicon.png" type="image/png" />
+        <link rel="icon" href="./images/favicon.png" type="image/png"" type="image/png" />
         <!-- スクロールふわっとjQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -40,13 +40,11 @@
     <body>
         <div class="wrapper" id="top">
             <header class="header">
-                <div class="logo">
-                    <h1>
-                        <a href="#top"
-                            ><img class="logo__img" src="./images/h1.png" alt="かじろ鍼灸院" />
-                        </a>
-                    </h1>
-                </div>
+                        <h1 class="logo">
+                            <a href="#top"
+                                ><img src="./images/h1.png" alt="かじろ鍼灸院">
+                            </a>
+                        </h1>
                 <!-- ハンバーガーメニュー ここから -->
                 <div class="menu">
                     <!-- ハンバーガーボタン -->
@@ -84,40 +82,43 @@
             </header>
             <main>
                 <section class="main__image">
-                    <div><img src="./images/top.webp" alt="店内の写真イメージ" /></div>
+                    <div class="main__content"><img class="main__image" src="./images/top.webp" alt="店内の写真イメージ" /></div>
 
-                    <h2>心と身体に、やさしい鍼灸を。</h2>
+                    <h2 class="section-title">心と身体に、やさしい鍼灸を。</h2>
                     <p>
                         一人ひとりのお悩みにやさしく寄り添い、すこやかで健康な毎日をサポートいたします。
                     </p>
                     <a href="#" class="reserve-btn"> WEB予約する → </a>
                 </section>
                 <section class="Features" id="Features">
-                    <h2 class="Features__title">
+                    <h2 class="section-title">
                         OUR&nbsp;VALUES<br />当院の4つの特徴<br />&#x1F33F;
                     </h2>
                     <div>
-                        <img src="./images/" />
+                        <img src="./images/icon1.png" alt="優しい施術のアイコン">
                         <h3>痛みの少ない施術</h3>
                         <p>
                             極めて細い鍼を使用し、お客様にご負担のかからないように丁寧に施術いたします。
                         </p>
                     </div>
                     <div>
+                        <img src="./images/icon2.png" alt="女性にも嬉しいアイコン">
                         <h3>女性も安心</h3>
                         <p>女性鍼灸師が個別に個室にてカウンセリング・施術させていただきます。</p>
                     </div>
                     <div>
+                        <img src="./images/icon3.png" alt="プライベート空間のアイコン">
                         <h3>完全予約制</h3>
                         <p>待合室での密を避け、一人ひとり十分な時間を確保して施術いたします。</p>
                     </div>
                     <div>
+                        <img src="./images/icon4.png" alt="リラックス空間のアイコン">
                         <h3>心地よい空間</h3>
                         <p>木の温もりと柔らかな照明で、リラックスしてお休みいただけます。</p>
                     </div>
                 </section>
                 <section class="Menu" id="Menu">
-                    <h2 class="Menu__title">
+                    <h2 class="section-title">
                         TREATMENT&nbsp;MENU<br />施術メニュー<br />&#x1F33F;
                     </h2>
                     <div class="container">
@@ -153,7 +154,7 @@
                     </div>
                 </section>
                 <section class="question" id="question">
-                    <h2 class="question__title">
+                    <h2 class="section-title">
                         Ｑ&nbsp;&amp;&nbsp;Ａ<br />よくあるご質問<br />&#x1F33F;
                     </h2>
                     <details>
@@ -171,7 +172,7 @@
                     </details>
                 </section>
                 <section class="access" id="access">
-                    <h2 class="access__title">
+                    <h2 class="section-title">
                         ACCESS&nbsp;&amp;&nbsp;HOURS<br />アクセス・診療時間<br />&#x1F33F;
                     </h2>
                     <div class="open_time_table">
