@@ -53,8 +53,6 @@
 ---
 
 <br>
-```md id="fw0zv9"
----
 
 ## 📖 Concept Sheet
 
@@ -70,22 +68,11 @@
 | **フォント** | 見出しはゴシック体、本文は明朝体を使用し、メリハリのある読みやすいデザインにしました。 |
 | **ユーザーシナリオ** | 身体の不調に悩む女性が、「ここなら相談しやすそう」と安心して来院を検討できることを意識しました。また、美容鍼に興味がある方や、鍼・お灸に初めて触れる方でも不安を感じず、気軽に予約したいと思えるような、やさしく親しみやすい雰囲気を目指して制作しました。 |
 
-```
+<br>
 
-
-## 📫 Contact
-
-| | |
-|:--|:--|
-| GitHub | https://github.com/あなたのユーザー名 |
+--- 
 
 <br>
 
----
-
-<div align="center">
-
-🌿 **Thank you for visiting my profile.**
-
-</div>
-```
+## 📫 Contact 
+| | | |:--|:--| | GitHub | https://github.com/あなたのユーザー名 | <br> --- <div align="center"> 🌿 **Thank you for visiting my profile.** </div>
