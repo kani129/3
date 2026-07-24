@@ -2,11 +2,10 @@
 
 # 🌿 Kanako Saito
 
-### My Portfolio
+### 見てくださりありがとうございます
 
 「見やすくデザイン」を目指して HTML・CSSを中心にWebサイト制作を学習しています。
 
-<br>
 <br>
 
 ---
