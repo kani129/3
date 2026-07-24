@@ -4,7 +4,7 @@
 
 ### Web Designer Portfolio
 
-
+「見やすくデザイン」を目指して HTML・CSSを中心にWebサイト制作を学習しています。
 
 <br>
 <br>
@@ -75,4 +75,13 @@
 <br>
 
 ## 📫 Contact 
-| | | |:--|:--| | GitHub | https://github.com/あなたのユーザー名 | <br> --- <div align="center"> 🌿 **Thank you for visiting my profile.** </div>
+| | | |:--|:--| 
+| GitHub | https://github.com/あなたのユーザー名 |
+
+<br>
+
+---
+
+<div align="center"> 
+  🌿 **Thank you for visiting my profile.** 
+</div>
