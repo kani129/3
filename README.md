@@ -4,8 +4,7 @@
 
 ### Web Designer Portfolio
 
-見やすいデザインを目指して  
-HTML・CSSを中心にWebサイト制作を学習しています。
+
 
 <br>
 <br>
