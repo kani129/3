@@ -55,17 +55,6 @@ HTML・CSSを中心にWebサイト制作を学習しています。
 
 <br>
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=あなたのユーザー名&show_icons=true&hide_border=true&theme=default)
-
-<br>
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=あなたのユーザー名&layout=compact&hide_border=true&theme=default)
-
-</div>
 
 <br>
 
