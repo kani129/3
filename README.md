@@ -1,1 +1,101 @@
-<div align="center"> # 🌿 Kanako Saito ### Web Designer Portfolio 「見やすく、やさしく、心地よいデザイン」を目指して HTML・CSSを中心にWebサイト制作を学習しています。 <br> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> </div> --- ## 🌸 About Me 営業事務・経理事務として長年培った「正確さ」と「丁寧さ」を活かし、 現在はWebデザインを学習しています。 ユーザーにとって見やすく、安心感のあるWebサイト制作を心がけています。 --- ## 💻 Skills | | | |:--|:--| | **Markup** | HTML5・CSS3 | | **Editor** | Visual Studio Code | | **Version Control** | GitHub | | **Responsive** | レスポンシブデザイン | --- ## 🎨 Portfolio ### 🏥 鍼灸院ホームページ - HTML / CSS - レスポンシブ対応 - やさしい色合いと温かみのあるデザイン --- ### 👤 自己紹介サイト - HTML / CSS - シンプルで見やすいレイアウト - 自己紹介・趣味・プロフィールを掲載 --- ## 🌱 Currently Learning 📝 Webデザイン 📝 UI / UX 📝 レスポンシブコーディング --- ## 📊 GitHub Stats <div align="center"> ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=あなたのユーザー名&show_icons=true&hide_border=true&theme=default) ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=あなたのユーザー名&layout=compact&hide_border=true&theme=default) </div> --- ## 📫 Contact 🐙 GitHub https://github.com/あなたのユーザー名 --- <div align="center"> ### 🌿 Thank you for visiting my profile. </div>
+```md
+<div align="center">
+
+# 🌿 Kanako Saito
+
+### Web Designer Portfolio
+
+見やすく、やさしく、心地よいデザインを目指して  
+HTML・CSSを中心にWebサイト制作を学習しています。
+
+<br>
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+
+</div>
+
+<br>
+
+---
+
+<br>
+
+## 🌸 About Me
+
+営業事務・経理事務として培った「正確さ」と「丁寧さ」を活かし、
+現在はWebデザインを学んでいます。
+
+見る人が迷わず、安心して利用できる
+やさしいデザインを心掛けています。
+
+<br>
+
+---
+
+<br>
+
+## 💻 Skills
+
+| 項目 | 使用ツール |
+|:----|:-----------|
+| Markup | HTML5・CSS3 |
+| Editor | Visual Studio Code |
+| Version Control | GitHub |
+| Responsive | レスポンシブデザイン |
+
+<br>
+
+---
+
+<br>
+
+## 🎨 Portfolio
+
+| 制作物 | 使用技術 | 内容 |
+|:------|:--------|:-----|
+| 🏥 **鍼灸院ホームページ** | HTML / CSS | やさしい色合いと温かみを意識したレスポンシブ対応サイト |
+| 👤 **自己紹介サイト** | HTML / CSS | プロフィールや趣味を紹介するシンプルで見やすいWebサイト |
+
+<br>
+
+---
+
+<br>
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=あなたのユーザー名&show_icons=true&hide_border=true&theme=default)
+
+<br>
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=あなたのユーザー名&layout=compact&hide_border=true&theme=default)
+
+</div>
+
+<br>
+
+---
+
+<br>
+
+## 📫 Contact
+
+| | |
+|:--|:--|
+| GitHub | https://github.com/あなたのユーザー名 |
+
+<br>
+
+---
+
+<div align="center">
+
+🌿 **Thank you for visiting my profile.**
+
+</div>
+```
