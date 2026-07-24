@@ -2,7 +2,7 @@
 
 # 🌿 Kanako Saito
 
-### Web Designer Portfolio
+### My Portfolio
 
 「見やすくデザイン」を目指して HTML・CSSを中心にWebサイト制作を学習しています。
 
