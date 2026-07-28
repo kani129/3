@@ -10,7 +10,7 @@
     --base-color: #f8f5ef;
     --surface-color: #ffffff;
     --main-color: #8fa67a;
-    --main-dark: #7b9468;
+    --main-dark: #755a4d;
     --accent-color: #a9be8f;
 
     /* Textの色設定 */
@@ -358,7 +358,7 @@ section {
     text-align: center;
     border-radius: 30px;
     background: var(--surface-color);
-    border: 1px solid #b7b5b570;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
     img {
         width: 200px;
@@ -381,7 +381,7 @@ section {
 /* スライダー全体の設定 */
 .swiper {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .swiper-slide {
@@ -457,92 +457,45 @@ section {
     padding: 1rem 2rem;
 }
 
-/* フッター設定 */
-.footer {
-    background-color: var(--main-color);
-    border-radius: 20px;
-    color: var(--base-color);
-}
-
-.footer-nav__list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-nav__item {
-    flex: 1 1 auto;
-}
-
-.footer-nav__item__link {
-    text-align: center;
-}
-
-.footer__copyright {
-    /* smallタグはインライン要素 */
-    display: block;
-    text-align: center;
+.access__container {
+    background: var(--surface-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 3rem;
+    min-width: 250px;
+    border-radius: 30px;
 }
 
 .access__table {
-    display: block;
+    border: 1px solid #acacac;
     border-collapse: collapse;
-    /* overflow-x: scroll;で、
-  スマホ画面幅に表が入りきらない場合は
-  横スクロールしてくれます */
-    margin-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 .access__row {
-    display: flex;
     text-align: center;
+    border: 1px solid #acacac;
 
-    border-left: 1px solid #acacac;
     .access__time {
-        height: 38px;
-        background-color: #f6f6f6;
+        height: 2rem;
         max-width: 26%;
         width: 100%;
-        line-height: 36px;
-        font-size: 16px;
-        @media (max-width: 480px) {
-            max-width: 28%;
-        }
-        @media (max-width: 480px) {
-            font-size: 12px;
-            max-width: 31%;
-        }
+        line-height: 2;
     }
     .access__day {
-        font-size: 16px;
-        @media (max-width: 480px) {
-            font-size: 12px;
-        }
+        border: 1px solid #acacac;
     }
     .access__cell {
+        border: 1px solid #acacac;
         width: 100%;
         max-width: 9.2%;
-        line-height: 36px;
-        background: #ffffff;
-        @media (max-width: 480px) {
-            max-width: 9%;
-        }
-        @media (max-width: 480px) {
-            font-size: 10px;
-            max-width: 8%;
-        }
     }
-    div {
-        border-right: 1px solid #acacac;
-        border-top: 1px solid #acacac;
-    }
-    &.access__row_last {
-        div {
-            border-bottom: 1px solid #acacac;
-        }
-    }
+}
+.thead {
+    background: #f6f6f6;
 }
 
 .access__text {
+    margin: 1rem 0;
 }
 
 .access__map {
@@ -557,6 +510,43 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 30px;
+}
+
+/* フッター設定 */
+.footer {
+    background-color: var(--main-dark);
+    color: var(--base-color);
+}
+.footer__title {
+    font-weight: 200;
+    text-align: center;
+    padding-top: 4rem;
+    span {
+        font-size: 1rem;
+        color: #acacac;
+        margin-bottom: 3rem;
+    }
+}
+
+.footer-nav__list {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-nav__item {
+    flex: 1 1 auto;
+}
+
+.footer-nav__item__link {
+    text-align: center;
+}
+
+.footer__copyright {
+    /* smallタグはインライン要素 */
+    display: block;
+    text-align: center;
 }
 
 /* パンくずリストについて */
@@ -606,7 +596,7 @@ section {
     font-weight: 900;
     content: "\f102";
     font-size: 25px;
-    color: #fff;
+    color: var(--main-color);
     position: absolute;
     width: 25px;
     height: 25px;
@@ -621,7 +611,7 @@ section {
 #page_top a::after {
     content: "PAGE TOP";
     font-size: 13px;
-    color: #fff;
+    color: var(--main-dark);
     position: absolute;
     top: 45px;
     bottom: 0;
