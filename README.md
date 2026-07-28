@@ -75,7 +75,7 @@
 
 ## 📫 Contact 
 
-🐙GitHub | https://github.com/あなたのユーザー名 |
+🐙GitHub | https://github.com/kani129 |
 
 <br>
 
