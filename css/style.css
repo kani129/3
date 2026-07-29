@@ -64,7 +64,8 @@ body {
     border: 2px solid var(--main-color);
     padding: 1rem;
     margin: 2rem auto;
-    border-radius: 45px;
+    border-radius: 4em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     width: 300px;
     text-align: center;
     color: var(--main-color);
@@ -349,10 +350,40 @@ section {
         background: rgba(250, 248, 244, 0.15); /* 半透明 */
         backdrop-filter: blur(8px); /* ガラス風 */
         padding: 10rem 1rem;
-        
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         z-index: 10;
         text-align: center;
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeUp 0.8s ease forwards;
+
+        .main-visual__title {
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+            animation-delay: 0.5s;
+        }
+        .main-visual__text {
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+            animation-delay: 0.8s;
+        }
+        .main-visual__button {
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+            animation-delay: 1.1s;
+        }
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -362,6 +393,10 @@ section {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 3rem;
+}
+
+.section-text {
+    text-align: center;
 }
 
 .title-span {
@@ -379,7 +414,7 @@ section {
 
 .features__card {
     flex: 1 1 300px;
-    padding: 3rem;
+    padding: 1rem 1.3rem 3rem;
     min-width: 250px;
     text-align: center;
     border-radius: 30px;
@@ -388,17 +423,18 @@ section {
 
     img {
         width: 200px;
-        margin: auto;
+        margin: 0 auto;
     }
     .features__title {
         font-size: 1.5rem;
         font-weight: 300;
+        margin: 0;
     }
     /* パソコン以上 */
 }
 
 /* カルーセルコンテナ（トップページの写真）設定 */
-.container {
+.menu__container {
     width: 100%;
     margin-top: 2rem;
     margin-inline: auto;
@@ -422,12 +458,16 @@ section {
         font-size: 1.5rem;
         font-weight: 300;
         span {
-            color: var(--main-dark);
+            color: var(--main-color);
         }
     }
     .swiper__text {
         padding: 1rem 1rem 3rem 1rem;
     }
+}
+
+.swiper__span {
+    color: var(--text-light);
 }
 
 /* 各スライドの設定 */
