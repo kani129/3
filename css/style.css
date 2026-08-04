@@ -138,22 +138,22 @@ h1 {
 
 /* 中見出し設定 */
 h2 {
-    font-size: 1.375rem;
-    /* 22px */
+    font-size: 1.75rem;
+    /* 28px */
     line-height: 1.4;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
 
     @media screen and (width >=768px) {
-        font-size: 1.5rem;
-        /* 24px */
+        font-size: 2rem;
+        /* 32px */
         margin-top: 2.5rem;
         margin-bottom: 1rem;
     }
 
     @media screen and (width>=1024px) {
-        font-size: 1.75rem;
-        /*28px*/
+        font-size: 2.25rem;
+        /*36px*/
         margin-top: 3rem;
         margin-bottom: 1.25rem;
     }
@@ -161,22 +161,22 @@ h2 {
 
 /* 小見出し設定 */
 h3 {
-    font-size: 1rem;
-    /* 16px */
+    font-size: 1.5rem;
+    /* 24px */
     line-height: 1.4;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
 
     @media screen and (width >=768px) {
-        font-size: 1.25rem;
-        /* 20px */
+        font-size: 1.75rem;
+        /* 28px */
         margin-top: 2.5rem;
         margin-bottom: 1rem;
     }
 
     @media screen and (width>=1024px) {
-        font-size: 1.375rem;
-        /*22px*/
+        font-size: 2rem;
+        /*32px*/
         margin-top: 3rem;
         margin-bottom: 1.25rem;
     }
@@ -326,7 +326,6 @@ section {
 }
 
 .main-visual__title {
-    font-size: 2rem;
     font-weight: 500;
     text-align: center;
     margin: 1.5rem auto;
@@ -391,12 +390,12 @@ section {
     text-align: center;
     line-height: 1.5;
     font-weight: 300;
-    font-size: 2rem;
     margin-bottom: 3rem;
 }
 
 .section-text {
     text-align: center;
+    white-space: nowrap;
 }
 
 .title-span {
@@ -422,11 +421,13 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
     img {
-        width: 200px;
+        width: 150px;
         margin: 0 auto;
+        @media screen and (width >=768px) {
+            width: 200px;
+        }
     }
     .features__title {
-        font-size: 1.5rem;
         font-weight: 300;
         margin: 0;
     }
@@ -455,10 +456,13 @@ section {
         object-fit: cover;
     }
     .swiper__title {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 300;
         span {
             color: var(--main-color);
+        }
+        @media screen and (width >=768px) {
+            font-size: 1.5rem;
         }
     }
     .swiper__text {
@@ -469,8 +473,6 @@ section {
 .swiper__span {
     color: var(--text-light);
 }
-
-/* 各スライドの設定 */
 
 /* ページネーションのサイズと色 */
 .swiper-pagination-bullet {
@@ -493,12 +495,37 @@ section {
     background-color: #fdf9fb;
 }
 
+.menu-link {
+    background: var(--base-color);
+    border: 1px dotted #de839f;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 0.5rem 0;
+    padding: 0rem 0.5rem;
+    width: 100%;
+    margin-inline: auto;
+}
+.menu-link__img {
+    width: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.menu-link__text {
+    text-align: center;
+    color: #f28dab;
+}
+.menu-link__title {
+    font-weight: bold;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
 /* アコーディオン */
 .accordion__details {
     background-color: var(--surface-color);
     margin: 0 auto 1rem;
     padding: 0 1rem;
-    border-radius: 20px;
+    border-radius: 24px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     &[open] {
         box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
@@ -526,9 +553,9 @@ section {
 .access__container {
     background: var(--surface-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 3rem;
+    padding: 1rem;
     min-width: 250px;
-    border-radius: 30px;
+    border-radius: 24px;
 }
 
 .access__table {
@@ -576,7 +603,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 24px;
 }
 
 /* フッター設定 */
@@ -623,6 +650,307 @@ section {
     color: #acacac;
     padding-bottom: 3rem;
 }
+
+/* 施術メニューのページ */
+.page-title {
+    margin-bottom: 3rem;
+}
+.page-title__inner {
+    text-align: center;
+    .page-title__en {
+        display: block;
+        font-size: 3rem;
+        font-family: serif;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        margin-bottom: 0;
+    }
+    .page-title__ja {
+        color: var(--main-color);
+        margin-top: 0;
+        padding: 0;
+    }
+    .page-title__text {
+        margin-top: 1rem;
+    }
+}
+
+.menu-card {
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    background: var(--surface-color);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.35s;
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+    }
+    .menu-card__image {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+    .menu-card__img {
+        width: 90%;
+        border-radius: 24px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .menu-card__title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .menu-card__subtitle {
+        text-align: center;
+        color: var(--main-color);
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+    .menu-card__tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0;
+    }
+    .menu-card__tag {
+        padding: 0.1rem 0.5rem;
+        border-radius: 50px;
+        text-align: center;
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        @media screen and (width <=768px) {
+            min-width: 25%;
+        }
+        @media screen and (width >=768px) {
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+        }
+    }
+
+    .menu-card__text {
+        line-height: 2;
+        color: var(--text-color);
+        margin: 1.5rem;
+    }
+    .menu-card__info {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin-bottom: 28px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        :first-child {
+            border-left: none;
+        }
+    }
+    .menu-card__item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        padding: 0 0.5rem;
+        text-align: center;
+        border-left: 1px solid #eee;
+    }
+}
+.price__container {
+    background: #f8f3ea;
+    border-radius: 24px;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ece4d8;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    .price-title__box {
+        border-right: 1px solid #ece4d8;
+        background-image: url(../images/menu-leaf.png);
+        background-size: cover;
+        background-position: center;
+        padding: 1rem;
+    }
+    .price__box {
+        padding: 1rem;
+    }
+}
+.price-box__title {
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+}
+.price-box__price {
+    text-align: center;
+    margin: 0;
+}
+
+.contact-card {
+    background-color: var(--surface-color);
+    border-radius: 24px;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    .contact-card__text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .contact-card__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        :first-child {
+            border-left: none;
+        }
+    }
+
+    .contact-card__item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        border-left: 1px solid #eee;
+        margin-bottom: 1rem;
+        p {
+            text-align: center;
+        }
+    }
+}
+.contact-card__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 360px;
+    height: 60px;
+    margin-inline: auto;
+    border-radius: 999px;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.35s;
+    ::after {
+        content: "→";
+        font-size: 1.1rem;
+        transition: 0.35s;
+    }
+    :hover {
+        background: #a87c53;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+    :hover::after {
+        transform: translateX(6px);
+    }
+}
+
+/* ===========================================
+   COMMON
+=========================================== */
+
+.menu-card,
+.contact-card {
+    animation: fadeUp 0.8s ease both;
+}
+
+/* ===========================================
+   HOVER
+=========================================== */
+
+.menu-card__tag {
+    transition: 0.3s;
+}
+
+.menu-card__tag:hover {
+    background: var(--main-color);
+
+    color: #fff;
+}
+
+/* ===========================================
+   IMAGE
+=========================================== */
+
+.menu-card__img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+/* ===========================================
+   SPACING
+=========================================== */
+
+.menu-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.price-box {
+    margin-top: 30px;
+}
+
+.menu-card__body > * + * {
+    margin-top: 18px;
+}
+
+/* ===========================================
+   ANIMATION
+=========================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+/* ===========================================
+   BUTTON ACTIVE
+=========================================== */
+
+.contact-card__button:active {
+    transform: scale(0.98);
+}
+
+/* ===========================================
+   ACCESSIBILITY
+=========================================== */
+
+.contact-card__button:focus-visible {
+    outline: 3px solid #88a86b;
+
+    outline-offset: 4px;
+}
+
+.menu-card__tag:focus-visible {
+    outline: 2px solid var(--main-color);
+
+    outline-offset: 2px;
+}
+あと1つで完成です！
+
+
+
 
 /* パンくずリストについて */
 .breadcrumb__link {

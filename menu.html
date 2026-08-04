@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- スマートフォンやタブレットなどのモバイル端末での表示を最適化するための設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 文字化け防止 -->
+        <meta name="description" content="千葉県船橋市にあるかじろ鍼灸院" />
+        <!-- グーグルフォントNoto Serif Japanese   とNoto Sans JapaneseとRobotoの全3種類、   font-weight400;700のみ取り込み（軽量化） -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calendar_month,communication,directions_car,face_4,nest_eco_leaf"
+        />
+        <!-- Swiper 公式CSS　コピペして使う -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <!-- Swiper 公式JS　コピペして使う -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!-- リセットＣＳＳ -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- ＣＳＳスタイルシート読み込み -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- ファビコン設置 -->
+        <link rel="icon" href="./images/favicon.png" type="image/png" />
+        <!-- アイコンフォントとしてFont Awesomeを使用トップページへ戻るボタン -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+
+        <!-- スクロールふわっとjQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- タブに表示される -->
+        <title>かじろ鍼灸院｜心と身体にやさしい鍼灸を。</title>
+    </head>
+
+    <body>
+        <div class="wrapper" id="top">
+            <header class="header">
+                <h1 class="header__logo">
+                    <a href="/index.html">
+                        <img src="./images/h1.png" alt="かじろ鍼灸院" />
+                    </a>
+                </h1>
+                <!-- ハンバーガーメニュー ここから -->
+                <div class="menu">
+                    <!-- ハンバーガーボタン -->
+                    <!-- 読み上げ機能のため、aria-labelを設定 -->
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        aria-label="メニューを開く/閉じる"
+                        hidden
+                    />
+                    <label class="menu__icon" for="menu-toggle">
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                    </label>
+                    <!-- グローバルナビゲーション -->
+                    <nav class="header-nav" role="navigation" aria-label="メインメニュー">
+                        <ul class="header-nav__list" role="list">
+                            <li class="header-nav__item">
+                                <a href="./index.html" class="header-nav__link">ホーム</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#top" class="header-nav__link">施術メニュー</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#staff" class="header-nav__link">スタッフ紹介</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#access" class="header-nav__link">アクセス</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- ハンバーガーメニューここまで -->
+            </header>
+            <main>
+                <main class="menu-page">
+                    <section class="page-title">
+                        <div class="page-title__inner">
+                            <span class="page-title__en">MENU</span>
+                            <h2 class="page-title__ja">施術メニュー<br />&#x1F33F;</h2>
+                            <p class="page-title__text">
+                                お悩みに合わせて、<br />最適な施術をご提案します。
+                            </p>
+                        </div>
+                    </section>
+                    <section class="menu-card">
+                        <div class="menu-card__image">
+                            <img
+                                src="./images/menu-autonomic.webp"
+                                alt="自律神経鍼灸"
+                                class="menu-card__img"
+                            />
+                        </div>
+                        <div class="menu-card__body">
+                            <h2 class="menu-card__title">自律神経の鍼灸</h2>
+                            <p class="menu-card__subtitle">自律神経の乱れによる不調に</p>
+                            <ul class="menu-card__tags">
+                                <li class="menu-card__tag">不眠</li>
+                                <li class="menu-card__tag">頭痛</li>
+                                <li class="menu-card__tag">めまい</li>
+                                <li class="menu-card__tag">疲れやすい</li>
+                                <li class="menu-card__tag">不安感</li>
+                            </ul>
+
+                            <p class="menu-card__text">
+                                身体全体を診ながら、自律神経のバランスを整え、
+                                本来の自然治癒力を高めていきます。
+                            </p>
+
+                            <div class="menu-card__info">
+                                <div class="menu-card__item">
+                                    <span class="material-symbols-outlined"> nest_eco_leaf </span>
+                                    <span>施術時間<br />約60分</span>
+                                </div>
+
+                                <div class="menu-card__item">
+                                    <span class="material-symbols-outlined"> face_4 </span
+                                    ><span>国家資格者が<br />施術</span>
+                                </div>
+                            </div>
+
+                            <div class="price__container">
+                                <div class="price-title__box">
+                                    <p class="price-box__title">料&nbsp金<br />&#40;税込&#41;</p>
+                                </div>
+                                <div class="price__box">
+                                    <p class="price-box__price">初回お試し&nbsp6,600円</p>
+                                    <p class="price-box__price">2回目以降&nbsp7,700円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="menu-card">
+                        <div class="menu-card__image">
+                            <img
+                                src="./images/menu_biyou.webp"
+                                alt="美容鍼"
+                                class="menu-card__img"
+                            />
+                        </div>
+                        <div class="menu-card__body">
+                            <h2 class="menu-card__title">美容鍼</h2>
+                            <p class="menu-card__subtitle">内側から輝く、自然な美しさへ</p>
+                            <ul class="menu-card__tags">
+                                <li class="menu-card__tag">リフトアップ</li>
+                                <li class="menu-card__tag">たるみ</li>
+                                <li class="menu-card__tag">むくみ</li>
+                                <li class="menu-card__tag">肌荒れ</li>
+                                <li class="menu-card__tag">くすみ</li>
+                            </ul>
+                            <p class="menu-card__text">
+                                お顔や首・肩まわりに鍼をすることで、 血流や筋肉のバランスを整え、
+                                内側から輝く美しさへ導きます。
+                            </p>
+                            <div class="menu-card__info">
+                                <div class="menu-card__item">
+                                    <span class="material-symbols-outlined"> nest_eco_leaf </span>
+                                    <span>施術時間<br />約60分</span>
+                                </div>
+
+                                <div class="menu-card__item">
+                                    <span class="material-symbols-outlined"> face_4 </span
+                                    ><span>国家資格者が<br />施術</span>
+                                </div>
+                            </div>
+                            <div class="price__container">
+                                <div class="price-title__box">
+                                    <p class="price-box__title">料&nbsp金<br />&#40;税込&#41;</p>
+                                </div>
+                                <div class="price__box">
+                                    <p class="price-box__price">初回お試し&nbsp7,700円</p>
+                                    <p class="price-box__price">2回目以降&nbsp8,800円</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =========================
+      ご予約
+  ========================== -->
+
+                    <section class="contact-card">
+                        <p class="contact-card__text">
+                            初めての方も安心して<br />ご来院いただけます
+                        </p>
+                        <div class="contact-card__items">
+                            <div class="contact-card__item">
+                                <span class="material-symbols-outlined"> calendar_month </span>
+                                <p>完全予約制</p>
+                            </div>
+                            <div class="contact-card__item">
+                                <span class="material-symbols-outlined"> communication </span>
+                                <p>丁寧な<br />カウンセリング</p>
+                            </div>
+
+                            <div class="contact-card__item">
+                                <span class="material-symbols-outlined"> directions_car </span>
+                                <p>駐車場あり</p>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="contact-card__button">
+                            ご予約・お問い合わせはこちら
+                        </a>
+
+                        <p class="contact-card__text">お気軽にご相談ください。</p>
+                    </section>
+                </main>
+            </main>
+            <footer class="footer">
+                <h2 class="footer__title">
+                    かじろ鍼灸院<br /><span>Kajiro&nbsp;Acupuncture&nbsp;&&nbsp;Moxibustion</span>
+                </h2>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list" role="list">
+                        <li class="footer-nav__item">
+                            <a href="#top" class="footer-nav__link">ホーム</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#Menu" class="footer-nav__link">施術メニュー</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#staff" class="footer-nav__link">スタッフ紹介</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#access" class="footer-nav__link">アクセス</a>
+                        </li>
+                    </ul>
+                </nav>
+                <small class="footer__copyright"
+                    >&copy; 2026 かじろ鍼灸院．All right reserved</small
+                >
+            </footer>
+            <div id="page_top"><a href="#"></a></div>
+        </div>
+        <!-- java scriptは閉じbodyの直上に記入すること -->
+        <script src="js/tooltip.js"></script>
+        <!-- ジャバスクリプトのオプションについて外部JSファイルに記述 -->
+        <script src="./js/swiper.js"></script>
+        <script src="./js/scrole.js"></script>
+    </body>
+</html>
