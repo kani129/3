@@ -497,29 +497,27 @@ section {
     padding: 0rem 0.5rem;
     width: 100%;
     margin-inline: auto;
-    @media screen and (width >=768px) {
-        display: flex;
-    }
 }
 .menu-link__img {
     width: 50%;
-    object-fit: cover;
     margin: 0 auto;
-    @media screen and (width >=768px) {
-        width: 30%;
-    }
+    padding-bottom: 0.5rem;
 }
 .menu-link__text {
     text-align: center;
     color: #f28dab;
-    @media screen and (width >=768px) {
-        width: 50%;
-    }
 }
 .menu-link__title {
+    text-align: center;
     font-weight: bold;
-    margin: 0.5rem 0;
+    margin: 0;
     padding: 0.5rem 0;
+    &:hover {
+        color: var(--accent-color);
+        &::before {
+            transform: translateX(10%);
+        }
+    }
 }
 
 /* アコーディオン */
@@ -591,10 +589,17 @@ section {
 
 .access__text {
     margin: 1rem 0;
+    @media screen and (width>=1024px) {
+        padding-left: 16rem;
+    }
 }
 
 .access__map {
     width: 100%;
+    max-width: 800px;
+    max-height: 450px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
     position: relative;
     padding-top: 56.25%;
 }
@@ -644,16 +649,23 @@ section {
     padding: 0 0.1rem;
     margin: 0;
     margin-inline: auto;
+    @media screen and (width>=768px) {
+        letter-spacing: normal;
+    }
 }
 
 .footer-nav__link {
     color: #d1d0d0;
+    @media screen and (width>=768px) {
+        padding: 1rem;
+    }
 }
 
 .footer__copyright {
     /* smallタグはインライン要素 */
     display: block;
     text-align: center;
+    margin: 0 auto;
     color: #acacac;
     padding-bottom: 3rem;
 }
