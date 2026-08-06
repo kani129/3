@@ -194,7 +194,8 @@ section {
 .main-visual {
     padding-bottom: 0;
 }
-.access {
+.access,
+.feature {
     border-bottom: none;
     padding: 0;
 }
@@ -902,6 +903,76 @@ section {
         opacity: 1;
 
         transform: translateY(0);
+    }
+}
+
+/* スタッフページ */
+.staff-card {
+    text-align: center;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 3rem;
+    padding-bottom: 0;
+    transition: 0.4s;
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+    }
+    .staff-card__image {
+        margin-inline: auto;
+    }
+    .staff-card__img {
+        max-width: 300px;
+        background-color: rgb(245, 229, 193);
+        border-radius: 24px;
+        margin: 0.5rem auto;
+    }
+    @media screen and (width>=768px) {
+        display: flex;
+    }
+}
+.staff-card__body {
+    @media screen and (width>=768px) {
+        width: 50%;
+        line-height: 1;
+        padding-top: 1rem;
+    }
+    .staff-card__job {
+        color: var(--accent-color);
+        font-size: 1.5rem;
+    }
+}
+.staff-card__profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    .staff-card__item {
+        list-style: none;
+        align-items: center;
+        gap: 12px;
+        line-height: 1.8;
+    }
+}
+.message {
+    background: #fff;
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 48px;
+    transition: 0.4s;
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .message__title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Noto Serif JP", serif;
+        margin-bottom: 28px;
     }
 }
 
