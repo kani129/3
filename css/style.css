@@ -631,34 +631,20 @@ section {
 
 .footer-nav {
     width: 100%;
-    margin-inline: auto;
 }
 
 .footer-nav__list {
     display: flex;
     padding: 0;
-    margin: 2rem;
-    text-align: center;
-    :first-child {
-        border-left: none;
-    }
 }
 .footer-nav__item {
     letter-spacing: -0.1em; /* 文字間隔を狭く設定 */
-    border-left: 1px solid #eee;
-    padding: 0 0.1rem;
-    margin: 0;
     margin-inline: auto;
-    @media screen and (width>=768px) {
-        letter-spacing: normal;
-    }
+    padding: 0;
 }
 
 .footer-nav__link {
     color: #d1d0d0;
-    @media screen and (width>=768px) {
-        padding: 1rem;
-    }
 }
 
 .footer__copyright {
@@ -691,6 +677,16 @@ section {
     }
     .page-title__text {
         margin-top: 1rem;
+        letter-spacing: -0.1em; /* 文字間隔を狭く設定 */
+    }
+}
+
+.menu-card__container {
+    @media screen and (width>=1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
     }
 }
 
@@ -705,6 +701,7 @@ section {
         transform: translateY(-6px);
         box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
     }
+
     .menu-card__image {
         width: 100%;
         aspect-ratio: 16/9;
@@ -846,14 +843,14 @@ section {
     }
 }
 .contact-card__button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     gap: 10px;
     width: 100%;
     max-width: 360px;
     height: 60px;
-    margin-inline: auto;
     border-radius: 999px;
     background: var(--main-color);
     color: #fff;
@@ -872,6 +869,12 @@ section {
     }
     :hover::after {
         transform: translateX(6px);
+    }
+    @media screen and (width >=768px) {
+        max-width: 400px;
+    }
+    @media screen and (width>=1024px) {
+        padding: 0.5rem;
     }
 }
 
